@@ -1,0 +1,19 @@
+@import "mixins/variables.scss";
+@import "mixins/functions.scss";
+
+body
+{
+	@extend %bg_color_dark;
+}
+
+p
+{
+	color: $white !important;
+}
+.user
+{
+	color: $white !important;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	padding: 10px;
+}

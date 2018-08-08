@@ -1,0 +1,15 @@
+<div class="jumbotron mt-3 mb-2 pt-2 pb-2">
+	<h2>Listado de Usuarios</h2>
+</div>
+<p ng-repeat="item in $ctrl.usuarios" >
+	{{item.name}} {{item.email}}
+</p>
+<div class="jumbotron pt-2 pb-2">
+	<h2>Detalle de Usuarios</h2>
+</div>
+<!-- <button class="btn btn-primary" ng-click="$ctrl.cambiarEmail()">
+	<span>Change Email</span>
+</button> -->
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Click en los recuadros de abajo para cambiar el Email" data-content="Texto de Prueba">Info</button>
+<user-detail ng-repeat="item in $ctrl.usuarios" usuario="item" numero="{{$index}}"></user-detail>
+

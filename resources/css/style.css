@@ -1,0 +1,25 @@
+/* PERCENTS*/
+/* COLORS*/
+/* DEFAULTS*/
+/* PERCENTS*/
+/* COLORS*/
+/* DEFAULTS*/
+/* MIXINS*/
+/*EXTENDS*/
+body {
+  background-color: #343a40 !important;
+  background-image: !important;
+  background-color: #343a40 !important;
+  background-size: !important;
+  background-color: #343a40 !important;
+  background-image: !important;
+  background-size: !important; }
+
+p {
+  color: #fff !important; }
+
+.user {
+  color: #fff !important;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px; }

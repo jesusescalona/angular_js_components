@@ -1,0 +1,71 @@
+@import "variables.scss";
+
+/* MIXINS*/
+@mixin bg($color,$size,$url)
+{
+	@if($color == null)
+	{
+		background:
+		{
+	   	image: $url !important;
+			size: $size !important;
+		}
+  	}
+  	@if($size == null)
+	{
+		background:
+		{
+	   	color: $color !important;
+			image: $url !important;
+		}
+  	}
+  	@if($url == null)
+	{
+		background:
+		{
+	   	color: $color !important;
+			size: $size !important;
+		}
+  	}
+  	@if(($color == null) and ($size == null)) 
+	{
+		background:
+		{
+	   	image: $url !important;
+		}
+  	}
+  	@if(($color == null) and ($image == nul))
+	{
+		background:
+		{
+	   	size: $size !important;
+		}
+  	}
+  	@else
+  	{
+  		background:
+		{
+			color: $color !important;
+	   	image: $url !important;
+			size: $size !important;
+		}
+  	}
+}
+
+/*EXTENDS*/
+%bg_color_white
+{
+  @include bg($white,null,null);
+}
+%bg_color_teal
+{
+  @include bg($teal,null,null);
+}
+%bg_color_dark
+{
+  @include bg($dark,null,null);
+}
+%bg_color_blue
+{
+  @include bg($blue,null,null);
+}
